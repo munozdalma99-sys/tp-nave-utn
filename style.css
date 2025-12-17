@@ -1,10 +1,8 @@
 /* --- 1. RESETEO UNIVERSAL --- */
-* {
-    margin: 0;
+* { margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica', Arial, sans-serif;
-}
+    font-family: 'Helvetica', Arial, sans-serif;}
 
 /* --- 2. HEADER Y NAVEGACIÓN (FLEXBOX) --- */
 .main-header
@@ -14,90 +12,81 @@
     padding: 15 px 5 %;
     background-color: #ffffff;
     box-shadow: 0 2 px 5 px rgba (0,0,0,0.1);}
-.main-header nav ul {
-    display: flex;
+.main-header nav ul 
+{ display: flex;
     list-style: none;
     gap: 25px;
-    align-items: center;
-}
+    align-items: center;}
 
-.main-header nav ul li a {
-    text-decoration: none;
+.main-header nav ul li a 
+{text-decoration: none;
     color: #333;
-    font-weight: 500;
-}
+    font-weight: 500;}
 
 /* --- 3. BOTONES ESTILO NAVE --- */
-.btn-entrar {
-    background-color: #61309b; /* Violeta Nave */
+.btn-entrar
+{ background-color: #61309b; /* Violeta Nave */
     color: white;
     border: none;
     padding: 10px 25px;
     border-radius: 50px;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease;
-}
+    transition: background 0.3s ease;}
 
-.btn-entrar:hover {
-    background-color: #4a247a;
-}
+.btn-entrar:hover 
+{ background-color: #4a247a;}
 
-.btn-mas {
-    background-color: transparent;
+.btn-mas 
+{ background-color: transparent;
     color: #ff4d00; /* Naranja Nave */
     border: 2px solid #ff4d00;
     padding: 8px 20px;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
-}
+    transition: 0.3s;}
 
-.btn-mas:hover {
-    background-color: #ff4d00;
-    color: white;
-}
+.btn-mas:hover
+{  background-color: #ff4d00;
+    color: white;}
 
 /* --- 4. SECCIÓN BENEFICIOS (FLEXBOX OBLIGATORIO) --- */
-.contenedor-beneficios {
-    display: flex;
+.contenedor-beneficios 
+{ display: flex;
     justify-content: center;
     gap: 30px;
     padding: 50px 5%;
-    flex-wrap: wrap; /* Importante para que no se rompa en tablets */
-}
+    flex-wrap: wrap; /* Importante para que no se rompa en tablets */}
 
-.card {
-    border: 1px solid #eee;
+.card 
+{ border: 1px solid #eee;
     border-radius: 15px;
     padding: 30px;
     max-width: 320px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);}
 
 /* --- 5. RESPONSIVE DESIGN (REQUISITO 320px - 2000px) --- */
 
 /* Para tablets y celulares */
-@media (max-width: 768px) {
-    .main-header nav ul {
-        display: none; /* Esconde el menú en móviles como pide la consigna */
-    }
+@media (max-width: 768px)
+{ .main-header nav ul {
+        display: none; /* Esconde el menú en móviles como pide la consigna */ }
 
-    .contenedor-beneficios {
-        flex-direction: column; /* Apila las tarjetas verticalmente */
-        align-items: center;
-    }
+    .contenedor-beneficios 
+ {  flex-direction: column; /* Apila las tarjetas verticalmente */
+        align-items: center;  }
 }
 
 /* Ajuste para pantallas muy pequeñas (320px) */
-@media (max-width: 480px) {
-    .card {
-        max-width: 100%;
-        margin: 10px;
-    }
+@media (max-width: 480px)
+{
+    .card 
+    { max-width: 100%;
+        margin: 10px; }
 }
+
 
 
 

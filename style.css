@@ -1,86 +1,26 @@
-/* --- 1. RESETEO UNIVERSAL --- */
-* { margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica', Arial, sans-serif;}
+/* Reset y estilos base */
+* {
+  box-sizing: border-box;
+}
 
-/* --- 2. HEADER Y NAVEGACIÓN (FLEXBOX) --- */
-.main-header
-{ display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15 px 5 %;
-    background-color: #ffffff;
-    box-shadow: 0 2 px 5 px rgba (0,0,0,0.1);}
-.main-header nav ul 
-{ display: flex;
-    list-style: none;
-    gap: 25 px;
-    align-items: center;}
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  scroll-behavior: smooth;
+  color: #2b2b2b;
+  overflow-x: hidden;
+}
 
-.main-header nav ul li a 
-{text-decoration: none;
-    color: #333;
-    font-weight: 500;}
-
-/* --- 3. BOTONES ESTILO NAVE --- */
-.btn-entrar
-{ background-color: #61309b; /* Violeta Nave */
-    color: white;
-    border: none;
-    padding: 10 px 25 px;
-    border-radius: 50 px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3 s ease;}
-
-.btn-entrar:hover 
-{ background-color: #4a247a;}
-
-.btn-mas 
-{ background-color: transparent;
-    color: #ff4d00; /* Naranja Nave */
-    border: 2 px solid #ff4d00;
-    padding: 8 px 20 px;
-    border-radius: 8 px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3 s;}
-
-.btn-mas:hover
-{  background-color: #ff4d00;
-    color: white;}
-
-/* --- 4. SECCIÓN BENEFICIOS (FLEXBOX OBLIGATORIO) --- */
-.contenedor-beneficios 
-{ display: flex;
-    justify-content: center;
-    gap: 30 px;
-    padding: 50 px 5 %;
-    flex-wrap: wrap; /* Importante para que no se rompa en tablets */}
-
-.card 
-{ border: 1 px solid #eee;
-    border-radius: 15 px;
-    padding: 30 px;
-    max-width: 320 px;
-    text-align: center;
-    box-shadow: 0 4 px 12 px rgba (0,0,0,0.05);}
-
-/* --- 5. RESPONSIVE DESIGN (REQUISITO 320px - 2000px) --- */
-
-/* Para tablets y celulares */@media (max-width: 768 px)
-{ .main-header nav ul {
-        display: none; /* Esconde el menú en móviles como pide la consigna */ }
-
-    .contenedor-beneficios 
- {  flex-direction: column; /* Apila las tarjetas verticalmente */
-        align-items: center;  }}
-
-/* Ajuste para pantallas muy pequeñas (320px) */@media (max-width: 480 px)
-{ .card 
-    { max-width: 100 %;
-        margin: 10 px; }}
+/* Usar .page en un contenedor interno, no en <body> */
+.page {
+  margin: 0 auto;
+  max-width: 1200px; /* ejemplo: limitar ancho */
+  padding: 1rem;     /* espacio interno */
+}
 
 
 

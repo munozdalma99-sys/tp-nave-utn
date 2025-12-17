@@ -11,18 +11,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 20 px 5 %;
     background-color: #fff;
 }
 
 .main-header nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 20 px;
 }
 
 /* Media Query para móviles [cite: 120] */
-@media (max-width: 768px) {
+media (max-width: 768 px) {
     .main-header nav ul {
         display: none; /* Esconder menú en móvil como en la app original */
     }
@@ -35,9 +35,10 @@
 
 /* Estilo de tarjetas */
 .card {
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 20px;
-    max-width: 300px;
+    border: 1 px solid #ddd;
+    border-radius: 12 px;
+    padding: 20 px;
+    max-width: 300 px;
     text-align: center;
 }
+

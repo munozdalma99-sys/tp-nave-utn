@@ -1,4 +1,4 @@
-/* Reseteo básico */
+/* 1. Reseteo y Base */
 * {
     margin: 0;
     padding: 0;
@@ -6,39 +6,78 @@
     font-family: Arial, sans-serif;
 }
 
-/* Header con Flexbox  */
+/* 2. Header (Alineación con Flexbox) */
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20 px 5 %;
+    padding: 20px 5%;
     background-color: #fff;
+    border-bottom: 1px solid #eee;
 }
 
 .main-header nav ul {
     display: flex;
     list-style: none;
-    gap: 20 px;
+    gap: 20px;
 }
 
-/* Media Query para móviles [cite: 120] */
-media (max-width: 768 px) {
-    .main-header nav ul {
-        display: none; /* Esconder menú en móvil como en la app original */
-    }
-    
-    .features-grid {
-        display: flex;
-        flex-direction: column; /* Apilar elementos en vertical */
-    }
+/* 3. Botones (Estilo Nave) */
+.btn-entrar, .btn-nave {
+    background-color: #61309b;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
-/* Estilo de tarjetas */
+.btn-entrar:hover, .btn-nave:hover {
+    background-color: #4a247a;
+}
+
+.btn-mas {
+    background-color: transparent;
+    color: #ff4d00;
+    border: 2px solid #ff4d00;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 4. Contenedores de Beneficios (Flexbox obligatorio) */
+.contenedor-beneficios {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap; /* Evita que se amontonen */
+}
+
 .card {
-    border: 1 px solid #ddd;
-    border-radius: 12 px;
-    padding: 20 px;
-    max-width: 300 px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 300px;
     text-align: center;
 }
+
+/* 5. RESPONSIVE DESIGN (Media Queries) */
+@media (max-width: 768px) {
+    /* Esconder menú en móviles como pide la consigna */
+    .main-header nav ul {
+        display: none; 
+    }
+
+    /* Apilar beneficios verticalmente en móviles (320px) */
+    .contenedor-beneficios {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 

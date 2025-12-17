@@ -12,22 +12,12 @@
     
     <meta name="description" content="Aceptá todos los medios de pago y cualquier app. Cobrá con QR, Link de pago y en tiendas online. Vendé más con promociones exclusivas y aprovechá costos bajos para que tu negocio crezca. Simplificá tu día a día con Nave. "/>
     <meta name="template" content="home-template"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>    
     
 
 
     
         <link rel="canonical" href="https://navenegocios.ar/home"/>
-    
-
-
-
-
-
-    
-
     
 
 
@@ -70,12 +60,7 @@
 
     <meta itemprop="name" content="Cobrá y recibí todos los pagos al instante | Nave"/>
     <meta itemprop="description" content="Aceptá todos los medios de pago y cualquier app. Cobrá con QR, Link de pago y en tiendas online. Vendé más con promociones exclusivas y aprovechá costos bajos para que tu negocio crezca. Simplificá tu día a día con Nave. "/>
-
-    <link rel="dns-prefetch" href="https://www.google.com.ar"/>
-    <link rel="dns-prefetch" href="https://www.facebook.com"/>
-    <link rel="dns-prefetch" href="https://googleads.g.doubleclick.net"/>
-    <link rel="dns-prefetch" href="https://www.google.com"/>
-    <link rel="dns-prefetch" href="https://asistentevirtual.bancogalicia.com.ar"/>
+    
     
     <meta id="structureddata" data-name="Nave" data-url="https://navenegocios.ar/home"/>
     <script>
@@ -227,132 +212,4 @@
           });
         }
       }(window, document, "", 1700)
-    )
-
-</script>
-<script type="text/javascript">
-    function activateRefreshCarousel(){
-      function refreshCarousel() {
-        let carrousel_container = document.querySelector(".cmp-carousel__content")
-        carrousel_container.firstChild.remove()
-        carrousel_container.lastChild.remove()
-        let firstChildCloned = carrousel_container.firstChild.cloneNode(true)
-        let lastChildCloned = carrousel_container.lastChild.cloneNode(true)
-        carrousel_container.append(firstChildCloned)
-        carrousel_container.insertBefore(lastChildCloned, carrousel_container.firstChild)
-      }
-      function searchMyCarouselRefresh() {
-        let numberCarousel = document.getElementsByClassName('cmp-carousel__item').length;
-        if (numberCarousel !== 0) {
-          let clonePrimero = document.getElementsByClassName('cmp-carousel__item')[numberCarousel - 1].getElementsByTagName('h1')[0]?.innerHTML;
-          let itemPrimero = document.getElementsByClassName('cmp-carousel__item')[1].getElementsByTagName('h1')[0]?.innerHTML;
-
-          let clonUltimo = document.getElementsByClassName('cmp-carousel__item')[0].getElementsByTagName('h1')[0]?.innerHTML;
-          let itemUltimo = document.getElementsByClassName('cmp-carousel__item')[numberCarousel - 2].getElementsByTagName('h1')[0]?.innerHTML;
-
-          function myCarouselRefresh() {
-            if (clonePrimero !== itemPrimero || clonUltimo !== itemUltimo) {
-              refreshCarousel();
-              clearInterval(myIntervalCarouselRefresh);
-            }
-          }
-
-          const myIntervalCarouselRefresh = setInterval(myCarouselRefresh, 1000);
-          clearInterval(myIntervalsearchMyCarouselRefresh);
-        }
-      }
-
-      const myIntervalsearchMyCarouselRefresh = setInterval(searchMyCarouselRefresh, 1000);
-    }
-
-    function setOnClickCustom() {
-      const pushEvent = (e) => {
-        window.adobeDataLayer = window.adobeDataLayer || [];
-        window.adobeDataLayer.push(e);
-      };
-
-      function onClickButtonAA (e, type) {
-        let label = e.target.innerHTML || e.target.textContent
-        let modTitle = e.target.dataset?.title || ''
-        let title = ''
-        if(type === 1){
-          title = 'modulo primario|'+modTitle
-          title = title.toLowerCase()
-        }else if(type === 0) {
-          title = 'modulo secundario|'+modTitle
-          title = title.toLowerCase()
-        }
-
-        const event = {
-          component: {
-            title: title,
-            category: "",
-            text: label,
-            linkType: "customLink",
-          },
-          event: "clickCustomButton",
-          linkLabel: label
-        };
-        pushEvent(event)
-      }
-      let primaryButtons = document.getElementsByClassName('btn-target-primario')
-      for (let index = 0; index < primaryButtons.length; index++) {
-        let element = primaryButtons[index];
-        element.onclick = (e) => onClickButtonAA(e, 1)
-      }
-      let secondaryButtons = document.getElementsByClassName('btn-target-secundario')
-      for (let index = 0; index < secondaryButtons.length; index++) {
-        let element = secondaryButtons[index];
-        element.onclick = (e) => onClickButtonAA(e, 0)
-      }
-    }
-</script>
-<script type="text/javascript">
-    function dispatchCustomEvent(componentId, pathXF) {
-      let customEvent = new CustomEvent('change-xf', {
-          detail: {
-              moduleId: componentId,
-              pathXF: pathXF
-          }
-      });
-      if(pathXF.startsWith('/content/experience-fragments')){
-        window.dispatchEvent(customEvent);
-      }
-    }
-</script>
-      
-    
-    
-<script src="/etc.clientlibs/galicia/clientlibs/clientlib-react-nave.lc-33c7e0f7520f7ede32e14ef884958783-lc.min.js"></script>
-
-
-
-    
-
-    
-    
-<script src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js"></script>
-<script src="/etc.clientlibs/galicia/clientlibs/clientlib-base.lc-f54bcc9456cf289fb257b9499b24226e-lc.min.js"></script>
-
-
-
-
-
-
-    
-
-    
-
-    
-
-
-
-    
-    
-    
-
-      
-
-    
-  </body>
-</html>
+  

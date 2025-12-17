@@ -67,11 +67,13 @@
 }
 
 /* 5. RESPONSIVE DESIGN (Media Queries) */
+{
 @media (max-width: 768px) {
     /* Esconder menú en móviles como pide la consigna */
     .main-header nav ul {
         display: none; 
     }
+{
 
     /* Apilar beneficios verticalmente en móviles (320px) */
     .contenedor-beneficios {
@@ -79,5 +81,6 @@
         align-items: center;
     }
 }
+
 
 
